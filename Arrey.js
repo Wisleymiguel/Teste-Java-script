@@ -1,18 +1,22 @@
-function encontrarIndices(array) {
-  let indiceMaior = 0;
-  let indiceMenor = 0;
-
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] > array[indiceMaior]) {
-      indiceMaior = i;
-    }
-    if (array[i] < array[indiceMenor]) {
-      indiceMenor = i;
-    }
+class Arrey {
+  constructor() {
+    this.length = 0;
   }
 
-  return {
-    indiceMaior,
-    indiceMenor
-  };
+  push(item) {
+    this[this.length] = item;
+    this.length++;
+    return this.length;         
+  }
+
+  pop() {
+    if (this.length === 0) return undefined;
+    const lastIndex = this.length - 1;
+    const lastItem  = this[lastIndex];
+    delete this[lastIndex];
+    this.length--;
+    return lastItem;
+  }
 }
+
+module.exports = Arrey;          
