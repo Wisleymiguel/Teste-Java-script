@@ -28,38 +28,6 @@ Os exercícios foram desenvolvidos como prática para consolidar fundamentos de 
 ├── listarnumeros.js # Função para listar números
 ├── listarnumeros.test.js
 ├── package.json # Dependências e scripts
+
+
 └── README.md
-
----
-
-## ⚙️ Como Executar
-
-1. **Clonar o repositório**
-```bash
-git clone https://github.com/Wisleymiguel/Teste-Java-script.git
-cd Teste-Java-script/modulo-2
-npm install
-Rodar os testes
-
-bash
-Copiar código
-npm test
-📌 Exemplos de Exercícios
-✅ Calcular MDC
-javascript
-Copiar código
-const calcularMDC = (a, b) => {
-  while (b !== 0) {
-    let temp = b;
-    b = a % b;
-    a = temp;
-  }
-  return a;
-};
-✅ Teste correspondente
-javascript
-Copiar código
-test("calcular o MDC de 48 e 18 deve ser 6", () => {
-  expect(calcularMDC(48, 18)).toBe(6);
-});
-
