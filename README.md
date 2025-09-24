@@ -1,36 +1,65 @@
-# 📝 Testes e Exercícios - Módulo 2: JavaScript  
+# 🧩 Exercícios em JavaScript – Módulo 2
 
-## 🚀 Descrição  
-Repositório criado como parte do meu processo de aprendizado no curso de Engenharia de Qualidade de Software. Neste módulo, foquei no desenvolvimento de **funções básicas com JavaScript**, aplicando conceitos fundamentais de **lógica de programação** e **estruturas de controle**.  
+Repositório de estudos focado em **lógica de programação** e **testes unitários** com **JavaScript**.  
+Os exercícios foram desenvolvidos como prática para consolidar fundamentos de programação e boas práticas de **qualidade de software**.
 
-## ✅ O que foi praticado:  
-- Criação de funções JavaScript  
-- Estruturas condicionais (`if`, `else`)  
-- Manipulação de variáveis e escopo  
-- Organização de código em módulos separados  
-- Boas práticas de escrita de código  
+---
 
-## 📂 Estrutura do Repositório:  
-└── modulo-2
-├── exercicio1.js
-├── exercicio2.js
-└── exercicio3.js
+## 🚀 Objetivo
+- Resolver problemas de lógica usando funções em JavaScript;
+- Criar **testes automatizados** para validar cada solução;
+- Praticar princípios de **TDD (Test-Driven Development)**;
+- Fortalecer a base de raciocínio lógico aplicada à programação.
 
-Cada arquivo corresponde a um exercício proposto na aula, focando no uso de funções puras e simulação de processos cotidianos utilizando JavaScript.  
+---
 
-## 🛠️ Tecnologias Utilizadas  
-- JavaScript ES6+  
-- Node.js (para testes locais)  
-- Visual Studio Code  
+## 🛠️ Tecnologias Utilizadas
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)  
+- [Node.js](https://nodejs.org/)  
+- [Jest](https://jestjs.io/) *(ou framework usado nos testes)*  
 
-## 🎯 Aprendizados  
-Este módulo foi essencial para consolidar minha base de programação, fortalecendo meu raciocínio lógico e preparando o terreno para aplicações mais complexas, como **automação de testes** com Cypress, que é o foco principal do meu curso.  
+---
 
-## 📌 Próximos Passos  
-- Aprimorar a lógica condicional com exercícios mais avançados  
-- Iniciar a integração com frameworks de testes automatizados  
-- Trabalhar com testes unitários e TDD (Test Driven Development)  
+## 📂 Estrutura do Projeto
+├── Arrey.js # Funções de manipulação de arrays
+├── Arrey.test.js # Testes para funções de array
+├── function calcularMDC.js # Função para calcular o MDC
+├── function calcularMDC.test.js
+├── listarnumeros.js # Função para listar números
+├── listarnumeros.test.js
+├── package.json # Dependências e scripts
+└── README.md
 
-## 🔗 Contato  
-- [LinkedIn](https://www.linkedin.com/in/wisley-miguel)  
-- [GitHub](https://github.com/Wisleymiguel)  
+---
+
+## ⚙️ Como Executar
+
+1. **Clonar o repositório**
+```bash
+git clone https://github.com/Wisleymiguel/Teste-Java-script.git
+cd Teste-Java-script/modulo-2
+npm install
+Rodar os testes
+
+bash
+Copiar código
+npm test
+📌 Exemplos de Exercícios
+✅ Calcular MDC
+javascript
+Copiar código
+const calcularMDC = (a, b) => {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+};
+✅ Teste correspondente
+javascript
+Copiar código
+test("calcular o MDC de 48 e 18 deve ser 6", () => {
+  expect(calcularMDC(48, 18)).toBe(6);
+});
+
